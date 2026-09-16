@@ -63,6 +63,11 @@ public:
 			return y;
 	}
 
+	ostream operator<<(Point p)
+	{
+
+	}
+
 	void print()
 	{
 		cout << "(" << x << ", " << y << ")" << endl;
