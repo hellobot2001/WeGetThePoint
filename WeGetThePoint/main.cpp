@@ -124,6 +124,7 @@ istream& operator>>(istream& i, Point& p)
 
 int main()
 {
+	cout << "increment/decrement p's x and y" << endl;
 	Point p(1, 8);
 	cout << p << endl;
 	++p;
@@ -140,11 +141,11 @@ int main()
 	cout << "enter coordinates in format x,y or (x,y): ";
 	Point* v2 = new Point();
 	cin >> *v2;
-	cout << *v2 << endl;
-	cout << *v2 - p << endl;
-	cout << *v2 / p << endl;
-	cout << ((*v2 / p) == (p / *v2)) << endl;
-	cout << (*v2 != p) << endl;
+	cout << "v2: " << * v2 << endl;
+	cout << "distance between " << p << " and " << *v2 << ": " << * v2 - p << endl;
+	cout << "midpoint of " << p << " and " << *v2 << ": " << * v2 / p << endl;
+	cout << "midpoint of " << p << " and " << *v2 << " is equal to the midpoint of " << *v2 << " and " << p << ": " << ((*v2 / p) == (p / *v2)) << endl;
+	cout << *v2 << " is not equal to " << p << ": " << (*v2 != p) << endl;
 
 	delete v2; //RECONSTRUCT WHAT
 
