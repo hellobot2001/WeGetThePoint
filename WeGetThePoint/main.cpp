@@ -143,6 +143,9 @@ int main()
 	cout << *v2 << endl;
 	cout << *v2 - p << endl;
 	cout << *v2 / p << endl;
+	cout << ((*v2 / p) == (p / *v2)) << endl;
+	cout << (*v2 != p) << endl;
+
 	delete v2; //RECONSTRUCT WHAT
 
 }
